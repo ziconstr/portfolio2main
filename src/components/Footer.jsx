@@ -4,7 +4,7 @@ export function Footer() {
       <div className="max-w-6xl mx-auto px-6 py-10 flex items-center justify-between flex-wrap gap-3">
         <div>
           <p className="font-display text-lg font-semibold">Zico Sebastian</p>
-          <p className="text-sm text-muted mt-1">Stavanger, NO · Front-End Developer</p>
+          <p className="text-sm text-muted mt-1">2026 · Front-End Developer</p>
         </div>
         <div className="flex flex-col items-end gap-1 text-sm">
           <a href="https://github.com/ziconstr" target="_blank" rel="noreferrer" className="text-muted hover:text-ink transition-colors">

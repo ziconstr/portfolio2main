@@ -8,7 +8,7 @@ export function Hero() {
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.7 }}
         className="font-display font-bold leading-[0.85] tracking-tight text-[18vw] md:text-[14vw] lg:text-[12vw]">
-        ZICO.
+        PORTFOLIO.
       </motion.h1>
 
       <div className="mt-10 md:mt-14 grid md:grid-cols-12 gap-8 items-end">
@@ -21,7 +21,7 @@ export function Hero() {
             Front-End Developer crafting clean, accessible interfaces with care for typography, motion, and detail.
           </p>
           <p className="mt-3 text-sm uppercase tracking-[0.2em] text-muted">
-            Noroff Front-End Development · Stavanger, NO
+            Front-End Development · React · Next.js · Tailwind CSS
           </p>
         </motion.div>
 
