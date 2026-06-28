@@ -1,7 +1,0 @@
-export const projects = [
-  { slug: "css-frameworks", title: "CSS Frameworks", teaser: "Responsive layout system built with a custom CSS framework and reusable components.", image: "/images/css-frameworks.png", live: "https://cssframework-resit.netlify.app/", repo: "https://github.com/ziconstr/cssframework-resit-new", status: "published" },
-  { slug: "javascript-frameworks", title: "JavaScript Frameworks", teaser: "Interactive React-based app showcasing API data, routing, and reusable components.", image: "/images/js-frameworks.png", live: "https://zico-jsfw.netlify.app/", repo: "https://github.com/NoroffFEU/jsfw-2025-v1-nstr", status: "published" },
-  { slug: "cms", title: "CMS", teaser: "Headless CMS blog with modern JavaScript and responsive UI patterns.", image: "/images/cms.png", live: "https://cmsresit.netlify.app/", repo: "https://github.com/Noroff-FEU-Assignments/cross-course-project-ziconstr", status: "published" },
-  { slug: "the-barbers", title: "The Brother's Barber", teaser: "Barbershop website demonstrating semantic HTML, CSS layout and branding.", image: "/images/barbers.png", live: "https://startling-fairy-fd3438.netlify.app/", repo: "https://github.com/ziconstr/barbershop", status: "published" },
-  { slug: "semester-project-2", title: "Auction House", teaser: "Major semester project currently in development — stay tuned!", image: "/images/auctionhouse.png", live: null, repo: null, status: "coming-soon" }
-]
