@@ -86,7 +86,7 @@ This is a school project, but if you'd like to suggest improvements you can fork
 
 ## Contact
 
-- GitHub: [ziconstr](https://github.com/ziconstr)
+- GitHub: [ziconstr](https://github.com/ziconstr/portfolio2main/)
 - Live site: [portfolio2resit.netlify.app](https://portfolio2resit.netlify.app/)
 
 ## Acknowledgments
