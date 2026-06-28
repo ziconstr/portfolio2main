@@ -8,10 +8,12 @@ export default {
         sans: ['Inter', 'ui-sans-serif', 'system-ui'],
       },
       colors: {
-        brand: {
-          400: '#d4ff3a',
-          500: '#c5fb45',
-          600: '#a8e615',
+        cream: '#fafaf7',
+        ink: '#111111',
+        muted: '#6b6b6b',
+        accent: {
+          500: '#e85d3c',
+          600: '#cc4a2c',
         },
       },
     },

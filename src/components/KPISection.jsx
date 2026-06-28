@@ -11,10 +11,11 @@ export function KPISection() {
     <section
       id="kpi"
       aria-label="Key performance indicators"
-      className="max-w-6xl mx-auto px-4 py-20">
-      <h2 className="text-2xl md:text-3xl font-bold">By the Numbers</h2>
-      <p className="text-gray-300 mt-2">A quick snapshot of my journey so far.</p>
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mt-8">
+      className="max-w-6xl mx-auto px-6 py-20 border-t border-ink/10">
+      <h2 className="text-4xl md:text-5xl font-bold tracking-tight">By the numbers</h2>
+      <p className="text-sm uppercase tracking-[0.2em] text-muted mt-3">A snapshot of the journey so far</p>
+
+      <div className="mt-12 grid grid-cols-1 md:grid-cols-3 gap-px bg-ink/10 border border-ink/10 rounded-2xl overflow-hidden">
         {stats.map((s, i) => (
           <motion.div
             key={s.label}
@@ -22,11 +23,11 @@ export function KPISection() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.5, delay: i * 0.08 }}
-            className="rounded-2xl border border-white/10 bg-white/[0.02] hover:bg-white/[0.06] transition-colors p-8 text-center">
-            <div className="text-5xl md:text-6xl font-extrabold text-brand-500">
+            className="bg-cream p-10 md:p-12">
+            <div className="font-display text-7xl md:text-8xl font-extrabold leading-none">
               {s.value}
             </div>
-            <div className="mt-3 text-sm uppercase tracking-wider text-gray-300">
+            <div className="mt-4 text-sm uppercase tracking-[0.2em] text-muted">
               {s.label}
             </div>
           </motion.div>

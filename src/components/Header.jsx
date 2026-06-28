@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import { Menu } from 'lucide-react'
+import { Menu, X } from 'lucide-react'
 
 export function Header() {
   const [open, setOpen] = useState(false)
@@ -10,19 +10,30 @@ export function Header() {
     { href: '#contact', label: 'Contact' },
   ]
   return (
-    <header className="sticky top-0 z-50 backdrop-blur supports-[backdrop-filter]:bg-gray-950/60 bg-gray-950/80">
-      <div className="max-w-6xl mx-auto px-4 py-3 flex items-center justify-between">
-        <a href="/" className="text-lg font-bold tracking-tight">Portfolio II – Zico</a>
-        <nav className="hidden md:flex gap-6 text-sm">
-          {nav.map(i => <a key={i.href} href={i.href} className="hover:text-brand-500 transition-colors">{i.label}</a>)}
+    <header className="sticky top-0 z-50 backdrop-blur bg-cream/85 border-b border-ink/5">
+      <div className="max-w-6xl mx-auto px-6 py-5 flex items-center justify-between">
+        <a href="/" className="text-sm font-semibold tracking-tight">Zico Sebastian</a>
+        <nav className="hidden md:flex gap-8 text-sm">
+          {nav.map(i => (
+            <a key={i.href} href={i.href} className="text-muted hover:text-ink transition-colors">
+              {i.label}
+            </a>
+          ))}
         </nav>
-        <button className="md:hidden p-2 rounded-lg hover:bg-white/5" aria-label="Toggle menu" onClick={()=>setOpen(!open)}>
-          <Menu size={20} />
+        <button
+          className="md:hidden p-2 rounded-lg hover:bg-ink/5"
+          aria-label="Toggle menu"
+          onClick={() => setOpen(!open)}>
+          {open ? <X size={20} /> : <Menu size={20} />}
         </button>
       </div>
       {open && (
-        <div className="md:hidden border-t border-white/10 px-4 pb-4">
-          {nav.map(i => <a key={i.href} href={i.href} className="block py-2">{i.label}</a>)}
+        <div className="md:hidden border-t border-ink/5 px-6 pb-4 bg-cream">
+          {nav.map(i => (
+            <a key={i.href} href={i.href} className="block py-2 text-muted hover:text-ink" onClick={() => setOpen(false)}>
+              {i.label}
+            </a>
+          ))}
         </div>
       )}
     </header>
