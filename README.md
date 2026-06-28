@@ -1,6 +1,6 @@
 # Portfolio II – Zico Sebastian
 
-![Portfolio screenshot](https://portfolio2resit.netlify.app/images/me.png)
+![Portfolio screenshot](public/images/image.png)
 
 A personal Front-End Developer portfolio built for the Noroff Front-End Development course. It showcases my selected projects, skills, and contact information.
 
