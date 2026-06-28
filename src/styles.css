@@ -1,6 +1,17 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-::selection { background: #3b82f6; color: white; }
+
+@layer base {
+  body {
+    font-family: 'Inter', ui-sans-serif, system-ui, sans-serif;
+  }
+  h1, h2, h3, h4 {
+    font-family: 'Bricolage Grotesque', ui-sans-serif, system-ui, sans-serif;
+    letter-spacing: -0.02em;
+  }
+}
+
+::selection { background: #c5fb45; color: #020617; }
 html, body, #root { height: 100%; }
-.prose :where(a):not(:where(.not-prose *)){ color:#93c5fd; }
+.prose :where(a):not(:where(.not-prose *)){ color:#c5fb45; }

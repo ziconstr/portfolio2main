@@ -4,11 +4,12 @@ export function Hero() {
   return (
     <section className="relative overflow-hidden">
       <div className="absolute inset-0 -z-10">
-        <img src="/images/hero-abstract.svg" alt="" className="w-full h-full object-cover opacity-70" />
+        <img src="/images/aurora2.png
+        " alt="" className="w-full h-full object-cover opacity-70" />
       </div>
       <div className="max-w-6xl mx-auto px-4 py-24 md:py-32">
         <motion.h1 initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 0.6 }} className="text-4xl md:text-6xl font-extrabold tracking-tight leading-tight">
-          Zico Sebastian
+          Zico Portfolio II
         </motion.h1>
         <motion.p initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0, delay: 0.1 }} viewport={{ once: true }} className="mt-4 text-lg text-gray-300 max-w-2xl">
           Front‑End Developer • Noroff Front‑End Development

@@ -1,6 +1,8 @@
 import { Header } from './components/Header.jsx'
 import { Hero } from './components/Hero.jsx'
 import { Projects } from './components/Projects.jsx'
+import { KPISection } from './components/KPISection.jsx'
+import { ParallaxSection } from './components/ParallaxSection.jsx'
 import { Skills } from './components/Skills.jsx'
 import { About } from './components/About.jsx'
 import { Contact } from './components/Contact.jsx'
@@ -13,6 +15,8 @@ export default function App() {
       <main className="flex-1">
         <Hero />
         <Projects />
+        <KPISection />
+        <ParallaxSection />
         <Skills />
         <About />
         <Contact />
